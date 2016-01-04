@@ -1,0 +1,12 @@
+<div class="container">
+<div class="text-center">
+    <hr>
+    <div ng-repeat="post in ctrl.posts" class="panel panel-primary">
+        <div class="panel-heading">{{post.title}}</div>
+        <div class="panel-body">{{post.content}}</div>
+        <a ng-click="ctrl.editPost(post)">edit</a> | <a ng-click="ctrl.deletePost(post)">delete</a>
+    </div>
+    <hr>
+    <button class="btn btn-primary" ng-click="ctrl.addPost()">Add Post</button>
+</div>
+</div>

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/ui-router/release/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="Angular/app.js"></script>
+    <script src="Angular/config/config.js"></script>
+    <script src="Angular/post/post.js"></script>
+    <script src="Angular/post/services/postService.js"></script>
+    <script src="Angular/post/controllers/postController.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="postController">
+        <h1 class="text-center">Basic Node App that does CRUD</h1>
+    </div>
+    <div ui-view></div>
+</body>
+</html>

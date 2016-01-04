@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h3 class="modal-title">Edit post</h3>
+</div>
+<div class="modal-body">
+    Title <br />
+    <input ng-model="ctrl.title" type="text" /> <br />
+    Content <br />
+    <textarea ng-model="ctrl.content" style="height: 128px; width: 565px;"></textarea>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ctrl.submit()">Submit</button>
+    <button class="btn btn-warning" type="button" ng-click="ctrl.cancel()">Cancel</button>
+</div>

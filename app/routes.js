@@ -18,8 +18,6 @@ module.exports = function(app){
             newPost.save(function(err){
                 if(err)
                     console.log(err);
-                console.log("Post Saved");
-                console.log(post);
                 Post.find(function(err, posts){
                     if(err){
                         console.log(err);

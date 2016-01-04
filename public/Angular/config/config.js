@@ -12,5 +12,7 @@
             url: "/new",
             templateUrl: "Angular/post/views/new.html"
         })
+        
+        $urlRouterProvider.otherwise("posts");
     });
 })();

@@ -3,6 +3,8 @@ var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+var ws = require("nodejs-websocket");
+
 
 var mongoose = require('mongoose');
 
@@ -23,6 +25,10 @@ app.use(methodOverride('X-HTTP-METHOD-Override'));
 app.use(express.static(__dirname + '/public'));
 
 require('./app/routes')(app);
+
+ws.myConnections = [];
+
+require('./app/websocket')(ws)
 
 app.listen(port);
 

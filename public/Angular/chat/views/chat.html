@@ -1,0 +1,10 @@
+    <div class="container">
+        <ul class="list-group messenger">
+            <li ng-repeat="message in ctrl.messages track by $index" class="list-group-item">{{message}}</li>
+        </ul>
+        <div class="text-center">
+            <input type="text" ng-model="ctrl.message">
+        </input><button class="btn btn-primary" ng-click="ctrl.sendMessage(ctrl.message)">Submit</button>
+        </div>
+    </div>
+</div>

@@ -5,3 +5,8 @@ body{
 a{
     cursor: pointer;
 }
+
+.messenger{
+    height: 500px;
+    overflow-y: scroll;
+}

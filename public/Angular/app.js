@@ -1,3 +1,7 @@
 (function(){
-    angular.module('app', ['ui.router', 'ui.bootstrap', 'postModule']);
+    angular.module('app', ['ui.router', 
+    'ui.bootstrap', 
+    'commonModule', 
+    'chatModule', 
+    'postModule']);
 })();
